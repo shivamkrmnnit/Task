@@ -77,7 +77,7 @@ router.post('/Createuser', [
 
 router.post('/Login', [
     body('email').isEmail(),
-    body('password').isLength({min:5})
+    body('password').isLength({min:1})
 
 
 ] ,async(req, res)=>{
